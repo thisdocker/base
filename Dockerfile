@@ -7,4 +7,6 @@ RUN apk update && apk upgrade \
   && rm -rf /var/cache/apk/* /tmp/* \
   && echo $' \n\
 alias ll=\'ls -l\' \n\
-' >> /etc/bashrc
+' >> /etc/profile
+
+CMD ["/bin/sh","-l"]
